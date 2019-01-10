@@ -1,0 +1,14 @@
+{
+		"name": "vvm-webpack-4",
+		"version": "0.0.1",
+		"description": "тестовая установка Webpasck 4",
+		"autor": "VVM",
+		"devDependencies": {
+				"webpack": "4.28.2",
+				"webpack-cli": "3.1.2"
+		},
+		"entry": "index.js",
+		"scripts": {
+				"dev": "webpack"
+		}
+}
