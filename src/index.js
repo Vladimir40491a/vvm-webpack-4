@@ -1,5 +1,5 @@
-const trololo = () => {
-    console.log('onClick 1')
+const onClickLazyLoading = () => {
+    console.log('onClickLazyLoading')
 
     var myBundl = () => import('./result');
     myBundl()
@@ -8,4 +8,4 @@ const trololo = () => {
         });
 }
 
-document.getElementById('btn').addEventListener('click', trololo);
+document.getElementById('btn-lazy-loading').addEventListener('click', onClickLazyLoading);

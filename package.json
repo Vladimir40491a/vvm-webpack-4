@@ -7,14 +7,14 @@
     "webpack": "4.28.2",
     "webpack-cli": "3.1.2"
   },
-  "entry": "index.js",
-  "scripts": {
-    "devserver": "webpack-dev-server --port 3000 --host localhost --contentBase dist --watch",
-    "dev": "webpack --mode development ./src/index.js --output ./dist/main_dev.js",
-    "start": "npm run devserver && npm run dev",
-    "build": "webpack --mode production ./src/index.js --output ./dist/main_propd.js"
-  },
   "dependencies": {
     "webpack-dev-server": "^3.1.14"
+  },
+  "entry": "index.js",
+  "scripts": {
+    "devserver": "webpack-dev-server --host localhost --port 3000 --contentBase dist",
+    "dev": "webpack --mode development ./src/index.js --output ./dist/main_dev.js --watch",
+    "start": "npm run dev && npm run devserver",
+    "build": "webpack --mode production ./src/index.js --output ./dist/main_propd.js"
   }
 }
